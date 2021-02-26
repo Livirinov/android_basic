@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.skillbox.hwproject1"
+        applicationId "com.skillbox.a01_basicsyntax"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

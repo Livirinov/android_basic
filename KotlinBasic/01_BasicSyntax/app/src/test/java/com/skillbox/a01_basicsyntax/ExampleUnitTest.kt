@@ -1,4 +1,4 @@
-package com.skillbox.hwproject1
+package com.skillbox.a01_basicsyntax
 
 import org.junit.Test
 

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "HwProject1"
+rootProject.name = "01_BasicSyntax"
