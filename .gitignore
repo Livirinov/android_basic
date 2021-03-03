@@ -1,6 +1,41 @@
 .idea/
 *.config
-*git_credentials
+*.git_credentials
+
+/*/.gitignore
+/*/*/.gitignore
+
+*.iml
+/*/.gradle
+/*/local.properties
+/*/.idea/caches
+/*/.idea/libraries
+/*/.idea/modules.xml
+/*/.idea/workspace.xml
+/*/.idea/navEditor.xml
+/*/.idea/assetWizardSettings.xml
+/*.DS_Store
+/*/build
+/*/captures
+/*.externalNativeBuild
+/*.cxx
+/*local.properties
+
+*.iml
+/*/*/.gradle
+/*/*/local.properties
+/*/*/.idea/caches
+/*/*/.idea/libraries
+/*/*/.idea/modules.xml
+/*/*/.idea/workspace.xml
+/*/*/.idea/navEditor.xml
+/*/*/.idea/assetWizardSettings.xml
+/*/*.DS_Store
+/*/*/build
+/*/*/captures
+/*/*.externalNativeBuild
+/*/*.cxx
+/*/*local.properties
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,kotlin,androidstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,kotlin,androidstudio
@@ -64,8 +99,9 @@ gen/
 out/
 
 # Gradle files
-.gradle
-.gradle/
+*.gradle
+/*/.gradle/
+/*/*/.gradle/
 build/
 
 # Signing files
