@@ -1,6 +1,6 @@
 package com.skillbox.homework6
 
-data class Animal (
+data class Animal(
     private val energy: Int,
     private val weight: Int,
     private val name: String
