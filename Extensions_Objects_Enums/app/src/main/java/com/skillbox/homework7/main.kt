@@ -4,6 +4,8 @@ fun main() {
 //    println("${Currencies.EURO.convertToUSD(50.0)} USD")
     val walletVirt = Wallets.virtualWallet
     val walletReal = Wallets.realWallet
+    val virtualMoneyInUSD: Double
+    val realMoneyInUSD: Double
 
     with(walletVirt) {
 
@@ -12,10 +14,10 @@ fun main() {
         addMoney(Currencies.USD, 0.0)
         addMoney(Currencies.USD, -1.1)
 
-        println("Money in vitrual wallet in USD: " + moneyInUSD())
+        virtualMoneyInUSD = moneyInUSD()
     }
-    println(walletVirt)
-    println()
+//    println(walletVirt)
+//    println()
 
     with(walletReal) {
 
@@ -25,9 +27,16 @@ fun main() {
         addMoney(Currencies.USD, 5, 0)
         addMoney(Currencies.USD, 1, -1)
 
-        println("Money in real wallet in USD: " + moneyInUSD())
+        realMoneyInUSD = moneyInUSD()
     }
-    println(walletReal)
+//    println(walletReal)
+
+    if (virtualMoneyInUSD > realMoneyInUSD) println("In virtual wallet is more money than in real.")
+        else if (virtualMoneyInUSD == realMoneyInUSD) println("In virtual wallet is the same money that is in real.")
+            else
+                println("In virtual wallet is less money than in real.")
+    println("Money in vitrual wallet in USD: $virtualMoneyInUSD")
+    println("Money in real wallet in USD: $realMoneyInUSD")
 }
 
 val Currencies.isNationalCurrency: Boolean
